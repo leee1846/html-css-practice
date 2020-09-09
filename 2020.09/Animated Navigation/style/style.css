@@ -1,0 +1,95 @@
+@font-face {
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+  font-family: Montt;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: aliceblue;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montt;
+  font-size: 18px;
+}
+li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+}
+li:hover a{
+  color: crimson;
+}
+ul {
+  list-style: none;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -7px 9px 17px 0px rgb(235, 235, 235);
+}
+nav {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+}
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -80px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color:white;
+  background-image: url(https://image.flaticon.com/icons/svg/545/545705.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  box-shadow: 0 0 17px 0px rgb(235, 235, 235);
+  transition: .5s ease;
+}
+.icon.close {
+  transform: translateY(-50%) rotate(360deg);
+  background-image: url(https://image.flaticon.com/icons/svg/748/748122.svg);
+  background-size: 40%;
+}
+ul {
+  width: 0;
+  overflow: hidden;
+  transform: translateX(50px);
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s ease;
+  padding: 20px;
+}
+nav.show ul{
+  width: 450px;
+  transform: translate(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+@media only screen and (max-width:768px) {
+  body{
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  ul {
+    padding: 15px;
+  }
+  li a{
+    padding: 10px 10px;
+  }
+  nav.show ul {
+    width: 260px;
+  }
+}
