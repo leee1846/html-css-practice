@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url("nattu-adnan-atSUvc1hMwk-unsplash.jpg") no-repeat center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto';
+}
+
+body .box {
+  background-color: rgba(0, 0, 0, 0.541);
+  width: 650px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 15px;
+  -webkit-box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.363);
+          box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.363);
+}
+
+body .box h1 {
+  color: #ebebeb;
+  text-align: center;
+  padding: 20px;
+}
+
+body .box .inbox {
+  padding: 17px 35px;
+  position: relative;
+}
+
+body .box .inbox input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #54c3d4;
+  font-size: 25px;
+  color: #111111;
+}
+
+body .box .inbox input:focus ~ label, body .box .inbox input:valid ~ label {
+  top: 0;
+  font-size: 17px;
+  color: #54c3d4;
+}
+
+body .box .inbox label {
+  font-size: 23px;
+  color: #ebebeb;
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .box input[type="submit"] {
+  margin: 17px 35px;
+  width: 90px;
+  height: 45px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #0082d8;
+  cursor: pointer;
+  color: #ebebeb;
+  font-size: 16px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .box input[type="submit"]:hover {
+  font-size: 17px;
+  -webkit-box-shadow: 2px 2px 5px #2e2e2e4f;
+          box-shadow: 2px 2px 5px #2e2e2e4f;
+  width: 92px;
+  height: 47px;
+}
+/*# sourceMappingURL=style.css.map */
