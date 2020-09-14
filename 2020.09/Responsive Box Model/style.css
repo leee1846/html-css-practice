@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container .left_bg {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(71, 71, 71);
+}
+.container .right_bg {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: rgb(224, 221, 0);
+}
+.container .total_boxes {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 70%;
+  background: white;
+  top: 50%;
+  transform: translate(0, -50%);
+  position: absolute;
+  overflow: hidden;
+}
+.container .left_boxes {
+  right: 0;
+}
+img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+.boxes {
+  display: flex;
+  height: 50%;
+}
+.boxes .contents {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contents h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.contents p {
+  line-height: 1.2rem;
+}
+.contents span {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container .left_bg {
+    width: 100%;
+    height: 50%;
+    position: relative;
+  }
+  .container .right_bg {
+    width: 100%;
+    height: 50%;
+    top: 50%;
+  }
+  .container .left_boxes {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -100%);
+  }
+  .container .right_boxes {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+  }
+  .contents h1 {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+  }
+  .contents p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .contents h1 {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+  .contents p {
+    font-size: 0;
+  }
+  .contents span {
+    opacity: 1;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  a {
+    color: crimson;
+  }
+}
