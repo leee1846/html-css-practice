@@ -1,0 +1,132 @@
+@font-face {
+  src: url("./fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf");
+  font-family: roboto;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: roboto;
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  max-width: 1500px;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#title {
+  width: 60%;
+}
+#title h1{
+  font-size: 1.6rem;
+  padding: 50px 40px;
+}
+.sections {
+  display: flex;
+}
+.sections .left_section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sections .select {
+  width: 400px;
+  padding: 40px 40px 40px 40px;
+  transition: .5s ease;
+}
+.container .select:hover .icon {
+  background: white;
+}
+.container .select:hover .icon i {
+  color: black;
+}
+.container .select:hover {
+  background: rgb(255, 201, 24);
+  border-radius: 10px;
+}
+.sections .select .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: rgb(255, 201, 24);
+  position: relative;
+  transition: .5s ease;
+}
+.sections .select .icon i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  transition: .5s ease;
+}
+.sections .select .title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 14px 0;
+}
+.sections .select p {
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.right_section {
+  margin-top: 40px;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 10px;
+  width: 600px;
+  padding: 30px 20px;
+}
+.right_section h2 {
+  font-size: 1rem;
+  padding-left: 20px;
+}
+.right_section .content {
+  padding: 20px;
+  margin: 20px 0;
+  transition: .5s ease;
+}
+.container .right_section .content:hover {
+  background:  rgb(230, 230, 230);
+  border-radius: 10px;
+}
+.right_section p {
+  font-size: 0.8rem;
+  font-weight: 900;
+  margin: 0;
+}
+.right_section span {
+  color: rgb(255, 201, 24);
+  font-weight: 900;
+  font-size: 0.7rem;
+  line-height: 0;
+}
+
+@media only screen and (max-width:1024px) {
+  .container {
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  #title {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .sections {
+    flex-direction: column;
+  }
+  .container .select {
+    width: 100%;
+  }
+  .container .right_section {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:600px)
