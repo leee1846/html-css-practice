@@ -73,7 +73,6 @@ ul {
 }
 nav.show ul{
   width: 450px;
-
   opacity: 1;
   pointer-events: all;
 }

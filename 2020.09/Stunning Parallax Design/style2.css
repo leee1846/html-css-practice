@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  color: white;
+  overflow: hidden;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  overflow: hidden;
+  padding: 60px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+section header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+}
+section header .logo {
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+section header .ham {
+  width: 40px;
+  height: 40px;
+  background: url("./images/menu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  position: relative;
+  transition: 0.3s ease;
+}
+section .content {
+  position: absolute;
+  max-width: 600px;
+  z-index: 1;
+}
+section .content h2 {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 2em;
+}
+section .content h2 span {
+  font-size: 3em;
+}
+section .content p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+}
+section .content a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  background: white;
+  margin-top: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+section .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+section .bird {
+  position: absolute;
+  right: 100px;
+  height: 80%;
+  bottom: 0;
+  z-index: 2;
+}
+section .sns {
+  position: absolute;
+  right: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  background: white;
+  padding: 18px;
+  border-radius: 5px;
+}
+section .sns li a {
+  display: inline-block;
+  transform: scale(0.5);
+}
+section .comment {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 1000px;
+}
+section .comment .box {
+  padding: 15px;
+  background: rgba(0, 255, 0, 0.2);
+  margin-right: 40px;
+  border-radius: 5px;
+}
+section .comment .box h2 {
+  font-weight: 600;
+  margin-bottom: -5px;
+}
+section .comment .box p {
+  line-height: 1.1em;
+  font-size: 0.9em;
+}
+.pop {
+  position: absolute;
+  right: -50%;
+  top: 0;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  z-index: 4;
+  list-style: none;
+  transition: 0.3s ease;
+}
+.pop.active {
+  right: 0;
+}
+.ham.ex {
+  background: url("./images/close.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  z-index: 100;
+}
+.pop a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: white;
+  transition: 0.3s ease color;
+}
+.pop a:hover {
+  color: dodgerblue;
+}
