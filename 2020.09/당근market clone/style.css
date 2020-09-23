@@ -1,0 +1,470 @@
+* {
+  font-family: "NanumSquare";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+section {
+  width: 100%;
+  height: 785px;
+  top: 65px;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.4em;
+  margin-bottom: 30px;
+}
+p {
+  display: inline-block;
+  font-weight: 500;
+  line-height: 1.4em;
+  margin-bottom: 30px;
+}
+button {
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(243, 243, 243);
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(231, 231, 231);
+}
+.pic {
+  background-color: rgb(177, 196, 193);
+  border-radius: 30px;
+  width: 260px;
+  height: 500px;
+  box-shadow: 0 0 20px rgb(143, 143, 143);
+}
+ul {
+  list-style: none;
+}
+/* --------------------------------------------------End of common section */
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 100000;
+  background-color: white;
+  border-bottom: 1px solid rgb(241, 241, 241);
+}
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+header .header-left {
+  display: flex;
+  align-items: center;
+}
+header .header-left .logo {
+  margin-right: 30px;
+}
+header .header-left a {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: rgb(21, 185, 76);
+  cursor: pointer;
+  text-decoration: none;
+}
+header .header-left .header-search {
+  display: flex;
+  align-items: center;
+}
+header .header-left .header-search input {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  outline: none;
+  font-size: 0.8rem;
+}
+header .header-left .header-search .search {
+  padding-right: 10px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  cursor: pointer;
+}
+header .header-right {
+  display: flex;
+}
+header .header-right .right-box {
+  height: 45px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 5px;
+  font-size: 0.7rem;
+  font-weight: 900;
+  cursor: pointer;
+  color: rgb(65, 65, 65);
+}
+header .header-right .right-box:hover {
+  border: 1px solid rgb(190, 190, 190);
+}
+header .header-right .right-box i {
+  font-size: 0.9rem;
+  margin-right: 5px;
+}
+header .header-right .app {
+  margin-right: 10px;
+}
+/* --------------------------------------------------End of header */
+
+.section1 {
+  position: relative;
+  background-color: #fbf7f2;
+  overflow-y: hidden;
+}
+.section1 .section1-container {
+  position: relative;
+  height: 100%;
+}
+.section1 .section1-container .section1-left {
+  position: absolute;
+  bottom: 20%;
+}
+.section1 .section1-container .section1-left h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.3em;
+  margin-bottom: 40px;
+}
+.section1 .section1-right div {
+  position: absolute;
+}
+.section1 .section1-right div:nth-child(2) {
+  right: 0;
+  bottom: -10px;
+  z-index: 2;
+}
+.section1 .section1-right div:nth-child(3) {
+  right: 150px;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+.section1 .section1-right div:nth-child(1) {
+  right: 300px;
+  bottom: 30px;
+  z-index: 2;
+}
+.section1 .section1-right div:nth-child(4) {
+  width: 80px;
+  height: 150px;
+  right: 530px;
+  bottom: 40%;
+  transform: rotate(-45deg);
+  background-color: rgb(240, 208, 197);
+  box-shadow: none;
+  z-index: 1;
+}
+.section1 .section1-right div:nth-child(5) {
+  width: 80px;
+  height: 150px;
+  right: -50px;
+  bottom: 25%;
+  transform: rotate(45deg);
+  background-color: rgb(240, 208, 197);
+  box-shadow: none;
+  z-index: 1;
+}
+/* --------------------------------------------------End of section1 */
+
+.section2 {
+  position: relative;
+}
+.section2 .section2-container {
+  height: 100%;
+  position: relative;
+}
+.section2 .section2-left div {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+.section2 .section2-left div:nth-child(2) {
+  left: 160px;
+}
+.section2 .section-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.section2 .section-right button {
+  margin-right: 15px;
+}
+/* --------------------------------------------------End of section2 */
+
+.section3 {
+  position: relative;
+  background-color: #e6f3e6;
+}
+.section3 .section3-container {
+  height: 100%;
+  position: relative;
+}
+.section3 .section3-left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.section3 .section3-left .left-boxes {
+  display: flex;
+}
+.section3 .left-boxes .left-box {
+  margin-right: 30px;
+}
+.section3 .left-boxes .left-box .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(128, 231, 128, 0.616);
+  margin-bottom: 20px;
+}
+.section3 .left-boxes .left-box .circle i {
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+}
+.section3 .left-boxes .left-box h5 {
+  margin-bottom: 15px;
+  font-size: 0.85rem;
+  font-weight: 900;
+}
+.section3 .left-boxes .left-box span {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.section3 .section3-right div:nth-child(2) {
+  position: absolute;
+  right: 0;
+  bottom: 45%;
+  transform: translateY(50%);
+}
+.section3 .section3-right div:nth-child(1) {
+  position: absolute;
+  right: 15%;
+  bottom: 55%;
+  transform: translateY(50%);
+}
+/* --------------------------------------------------End of section3 */
+
+.section4 {
+  position: relative;
+}
+.section4 .section4-container {
+  height: 100%;
+  position: relative;
+}
+.section4 .section4-left div {
+  position: absolute;
+  top: 55%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+.section4 .section4-left div:nth-child(2) {
+  top: 45%;
+  left: 170px;
+}
+.section4 .section-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.section4 .section-right button {
+  margin-right: 15px;
+}
+/* --------------------------------------------------End of section4 */
+
+.section5 {
+  background-color: #f8f9fa;
+  height: auto;
+  position: relative;
+  box-sizing: initial;
+  padding: 150px 0;
+}
+.section5 .section5-container {
+  height: 100%;
+  position: relative;
+}
+.section5 .section5-title {
+  text-align: center;
+  width: 100%;
+}
+.section5 .section5-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.section5 .section5-content .box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 18px;
+  cursor: pointer;
+}
+.section5 .section5-content .box .small-pic {
+  width: 232.5px;
+  height: 232.5px;
+  background-color: rgb(177, 196, 193);
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.section5 .section5-content .box span:nth-child(2) {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.section5 .section5-content .box span:nth-child(3) {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+.section5 .section5-content .box span:nth-child(4) {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.section5 .section5-content .box span {
+  margin-bottom: 7px;
+}
+.section5 .section5-content .interest {
+  display: flex;
+}
+.section5 .section5-content .interest span {
+  font-size: 0.7rem !important;
+  font-weight: 700 !important;
+  color: gray;
+  margin-right: 5px;
+}
+.section5 .section5-container a {
+  display: inline-block;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  color: black;
+  font-weight: 900;
+}
+/* --------------------------------------------------End of section5 */
+
+.section6 {
+  position: relative;
+  height: auto;
+}
+.section6 .section6-container {
+  position: relative;
+  padding: 50px 0;
+}
+.section6 .section6-container a {
+  color: black;
+  font-weight: 900;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.section6 .section6-container li:hover a {
+  transform: scale(1.03);
+}
+.section6 .section6-container ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+/* --------------------------------------------------End of section6 */
+
+footer {
+  position: relative;
+  width: 100%;
+  top: 65px;
+  background-color: #495057;
+  padding: 50px 0;
+}
+footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-top li {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+footer .footer-top a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-top a:hover {
+  transform: scale(1.02);
+}
+footer .footer-top li:nth-child(1) {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: white;
+}
+footer .footer-top li:nth-child(2) {
+  font-weight: 900;
+}
+footer .footer-top li:nth-child(2) a {
+  margin-bottom: 20px;
+}
+footer .footer-top li:nth-child(3) a {
+  color: #adb5bd;
+  margin-bottom: 20px;
+}
+footer .footer-top li:nth-child(3) a:nth-child(2) {
+  font-weight: 900;
+  color: white;
+}
+footer .footer-top li:nth-child(4) a {
+  color: #adb5bd;
+  margin-bottom: 20px;
+}
+footer .container .line {
+  width: 100%;
+  height: 0.07rem;
+  background-color: #787d837a !important;
+  margin: 50px 0 30px 0;
+}
+footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+footer .bottom-left div {
+  margin-bottom: 10px;
+  color: #adb5bd;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+footer .bottom-left div:nth-child(3) {
+  color: #868e96;
+}
+footer .bottom-left div span {
+  margin-right: 10px;
+}
+footer .bottom-left div a {
+  color: #adb5bd;
+  text-decoration: none;
+}
+footer .bottom-right a {
+  margin-left: 30px;
+}
+footer .bottom-right a i {
+  font-size: 30px;
+  color: #adb5bd;
+}
