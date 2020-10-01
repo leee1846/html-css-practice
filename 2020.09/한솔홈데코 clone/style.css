@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.hide {
+  position: absolute;
+  left: -1000px;
+}
+body {
+  min-width: 1280px;
+}
+/* end of common section -----------------------------------------*/
+
+header {
+  margin: 0 50px;
+  text-align: center;
+  height: 81px;
+  position: relative;
+}
+header h1 {
+  position: absolute;
+  left: 50px;
+  top: 14px;
+}
+header h1 a {
+  width: 110px;
+  height: 48px;
+  display: block;
+  color: transparent;
+  background: url(./images/sp_com.png);
+  background-repeat: no-repeat;
+  background-position: -300px 0;
+}
+header .spot {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  font-size: 12px;
+}
+header .spot li {
+  float: left;
+  position: relative;
+}
+header .spot li:after {
+  content:"";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 2px;
+  height: 7px;
+  background-color: black;
+  transform: translateY(-50%);
+}
+header .spot li:last-child:after {
+  display: none;
+}
+header .spot li a {
+  height: 81px;
+  line-height: 81px;
+  padding: 0 10px;
+}
+header .spot li:last-child a {
+  padding-right: 0;
+}
+header .lnb  li{
+  display: inline-block;
+}
+header .lnb  li a {
+  display: block;
+  padding: 0 35px;
+  height: 81px;
+  line-height: 81px;
+}
+header .lnb li a span {
+  position: relative;
+}
+header .lnb li a:hover {
+  color: #2d5b79;
+  font-weight: bold;
+}
+header .lnb li a:hover span:after {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color:  #2d5b79;
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+}
+
+/* end of header --------------------------------------------*/
+
+.visual {
+  margin: 0 50px;
+  position: relative;
+}
+.slider .prev,
+.slider .next{
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(./images/sp_com.png) no-repeat;
+  color: transparent;
+  width: 25px;
+  height: 47px;
+}
+.slider .prev {
+  left: 32px;
+  background-position: -128px -60px;
+}
+.slider .next {
+  right: 32px;
+  background-position: -158px -60px;
+}
+.slider .control {
+  position: absolute;
+  left: 0;
+  bottom: 55px;
+  text-align: center;
+  width: 100%;
+}
+.slider .control>div {
+  display: inline-block;
+  position: relative;
+  padding: 0 45px 0 0;
+}
+.slider .control>div>div {
+  position: absolute;
+  right: 0;
+}
+.slider .control>div>div a {
+  display: inline-block;
+  width: 8px;
+  height: 9px;
+  overflow: hidden;
+  margin: 0 0 0 7px;
+  opacity: 0.5;
+}
+.slider .control>div>div a.on {
+  opacity: 1;
+}
+.slider .control>div>div a.play {
+  background: url(./images/sp_com.png) no-repeat;
+  background-position: -108px -72px;
+}
+.slider .control>div>div a.pause {
+  background: url(./images/sp_com.png) no-repeat;
+  background-position: -108px -60px;
+}
+.slider .control a {
+  color: transparent;
+}
+.slider .control ul {
+  display: inline-block;
+  position: relative;
+  top: -4px;
+}
+.slider .control li {
+  display: inline-block;
+}
+.slider .control li {
+  padding: 0 3px;
+}
+.slider .control ul li a{
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  overflow: hidden;
+}
+.slider .control ul li.on a {
+  background-color: white;
+}
+.visual .con .slide {
+  background: url(./images/bg_main02.jpg) no-repeat center;
+  color: white;
+  font-size: 32px;
+  position: relative;
+  line-height: 46px;
+  z-index: -1;
+}
+.visual .con .slide .txt {
+  position: absolute;
+  top: 125px;
+  left: 50%;
+}
+.visual .con .slide p {
+  font-size: 20px;
+  padding-top: 19px;
+  line-height: 100%;
+}
+.visual .con>div{
+  height: 640px;
+}
+/* end of visual --------------------------------------------*/
+
+
+
+.product a{
+  display: block;
+  color: black;
+  font-size: 15px;
+}
+.product a:hover {
+  color: #2d5b79;
+  font-weight: bold;
+}
+.product a:before {
+  content: "";
+  background: url(./images/sp_com.png) no-repeat;
+  display: block;
+  width: 64px;
+  height: 52px;
+  margin: 0 0 26px 0;
+}
+.product ul {
+  text-align: center;
+  padding: 46px 0 41px;
+  font-size: 0;
+}
+.product li {
+  display: inline-block;
+  text-align: center;
+  padding: 0 55px;
+}
+.product li:nth-child(1) a:before {
+  background-position: -3px -118px;
+}
+.product li:nth-child(2) a:before {
+  background-position: -75px -118px;
+}
+.product li:nth-child(3) a:before {
+  background-position: -148px -118px;
+}
+.product li:nth-child(4) a:before {
+  background-position: -219px -118px;
+}
+.product li:nth-child(5) a:before {
+  background-position: -292px -118px;
+}
+.product li:nth-child(6) a:before {
+  background-position: -364px -118px;
+}
+.product li:nth-child(1) a:hover:before {
+  background-position: -3px -184px;
+}
+.product li:nth-child(2) a:hover:before {
+  background-position: -75px -184px;
+}
+.product li:nth-child(3) a:hover:before {
+  background-position: -148px -184px;
+}
+.product li:nth-child(4) a:hover:before {
+  background-position: -219px -184px;
+}
+.product li:nth-child(5) a:hover:before {
+  background-position: -292px -184px;
+}
+.product li:nth-child(6) a:hover:before {
+  background-position: -364px -184px;
+}
+/* end of product --------------------------------------------*/
+
+
+.magazine {
+  background-color: #dfd9d1;
+  position: relative;
+}
+.magazine h2 {
+  text-align: center;
+  font-size: 28px;
+  padding: 50px 0 16px;
+}
+
+
+
+
+
+
+
+
+
+
