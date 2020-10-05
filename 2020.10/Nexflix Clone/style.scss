@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+
+$red-color:#e50914;
+$border-gray: 8px solid #222222;
+@mixin center-size {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+body {
+  .container {
+    // header---------------------------------------------------
+    header {
+      height: 825px;
+      background: url(./images/bg.jpg) no-repeat center / cover;
+      position: relative;
+      z-index: 0;
+      border-bottom: $border-gray;
+      &:after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%),linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%),;
+        z-index: 0;
+      }
+      .header-container {
+        @include center-size();
+        position: relative;
+        height: 100%;
+        z-index: 1;
+        nav {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          height: 100px;
+          .logo {
+            height: 100%;
+            margin-left: 30px;
+            img {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              height: 120%;
+            }
+          }
+          button {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 35px;
+            width: 80px;
+            color: white;
+            background-color: $red-color;
+            outline: none;
+            border: none;
+            border-radius: 4px;
+            font-size: .8rem;
+            cursor: pointer;
+          }
+        }
+        .contents {
+          width: 100%;
+          position: absolute;
+          top: 30%;
+          left: 50%;
+          transform: translateX(-50%);
+          color: white;
+          text-align: center;
+          h1 {
+            font-size: 3.2rem;
+          }
+          h3 {
+            font-weight: 500;
+            font-size: 1.3rem;
+            padding: 20px 0;
+          }
+          h4 {
+            font-weight: 500;
+            font-size: .9rem;
+            padding-bottom: 20px;
+          }
+          .inputText {
+            width: 800px;
+            height: 68px;
+            margin: 0 auto;
+            position: relative;
+            .text {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 65%;
+              border:none;
+              outline: none;
+              font-size: 1rem;
+            }
+            .submit {
+              position: absolute;
+              top: 0;
+              right: 0;
+              height: 100%;
+              width: 35%;
+              border:none;
+              outline: none;
+              background: $red-color;
+              color: white;
+              font-size: 1.4rem;
+              cursor: pointer;
+            }
+          }
+          p {
+            font-weight: 500;
+            font-size: .9rem;
+            padding-top: 30px;
+          }
+        }
+      }
+    }
+    // end of header---------------------------------------
+    // section1--------------------------------------------
+    @mixin section-devide {
+      max-width: 1080px;
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @mixin h1-size {
+      font-size: 2.5rem;
+      padding-bottom: 20px;
+    }
+    @mixin p-size {
+      font-size: 1.3rem;
+      letter-spacing: .2px;
+    }
+
+
+    .section1 {
+      height: 470px;
+      background-color: black;
+      border-bottom: $border-gray;
+      .section1-container {
+        @include section-devide();
+        color: white;
+        .left {
+          h1 {
+            @include h1-size();
+          }
+          p {
+            @include p-size();
+          }
+        }
+        .right {
+          img {
+            width: 510px;
+          }
+        }
+      }
+    }
+    // end of section1---------------------------------------
+    // section2--------------------------------------------
+    .section2 {
+      height: 470px;
+      background-color: black;
+      border-bottom: $border-gray;
+      .section2-container {
+        @include section-devide();
+        color: white;
+        .left {
+          img {
+            width: 470px;
+          }
+        }
+        .right {
+          h1 {
+            @include h1-size();
+          }
+          p {
+            @include p-size();
+          }
+        }
+      }
+    }
+    // end of section2---------------------------------------
+    // section3--------------------------------------------
+    .section3 {
+      height: 470px;
+      background-color: black;
+      border-bottom: $border-gray;
+      .section3-container {
+        @include section-devide();
+        color: white;
+        .left {
+          h1 {
+            @include h1-size();
+          }
+          p {
+            @include p-size();
+          }
+        }
+        .right {
+          img {
+            width: 510px;
+          }
+        }
+      }
+    }
+    // end of section3---------------------------------------
+    // question--------------------------------------------
+    @mixin question-top{
+      background-color: #303030;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 30px;
+      border-bottom: 1px solid black;
+      font-size: 1.3rem;
+    }
+    @mixin question-bottom{
+      background-color: #303030;
+      padding: 40px 30px;
+      font-size: 1.3rem;
+    }
+
+    .question {
+      background-color: black;
+      border-bottom: $border-gray;
+      color: white;
+      padding: 70px 0;
+      .question-container {
+        max-width: 1080px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+          @include h1-size();
+        }
+        .question-list {
+          margin: 40px 0;
+          width: 840px;
+          .question-box {
+            .top {
+              @include question-top();
+              i.active {
+                transform: rotate(45deg);
+                transition: .3s ease transform ;
+              }
+            }
+            .bottom {
+              @include question-bottom();
+              display: none;
+              p {
+                margin-bottom:40px ;
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+              &.show {
+                display: block;
+              }
+            }
+          }
+        }
+        .inputText {
+          width: 800px;
+          height: 68px;
+          margin: 20px auto 0;
+          position: relative;
+          .text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 65%;
+            border:none;
+            outline: none;
+            font-size: 1rem;
+          }
+          .submit {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 35%;
+            border:none;
+            outline: none;
+            background: $red-color;
+            color: white;
+            font-size: 1.4rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+// media query-----------------------------------------------
+
+
+$breakepoint-smalldesktop: 1442px;
+$breakepoint-tablet: 768px;
+$breakepoint-phone: 414px;
+// tabelet ---------------------------------------------------
+@media (max-width: $breakepoint-smalldesktop) {
+  body {
+    .container {
+      header {
+        height: 800px;
+        .header-container {
+          nav {
+            .logo {
+              img {
+                height: 100%;
+              }
+            }
+          }
+          .contents {
+            h1 {
+              font-size: 2.5rem;
+            }
+            h3 {
+              margin: 0 auto;
+              width: 55%;
+            }
+            .inputText {
+              width: 680px;
+              height: 60px;
+              .text {
+                font-size: .8rem;
+              }
+              .submit {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
