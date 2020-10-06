@@ -1,7 +1,9 @@
-let questionBottom = document.querySelector('.question-list .question-box .bottom');
-let button = document.querySelector('.question-list .question-box .top i');
+let button = document.querySelector('.q-button')
+let appear = document.querySelectorAll('.question-box .bottom');
 
-button.addEventListener('click',(e)=>{
-  questionBottom.classList.toggle('show');
-  button.classList.toggle('active');
-})
+button.forEach(addEventListener('click',(e)=>{  
+  e.target.classList.toggle('active');
+  for (let i = 0; i < appear.length; i++) {
+      appear[i].classList.toggle('show');
+  }
+}))

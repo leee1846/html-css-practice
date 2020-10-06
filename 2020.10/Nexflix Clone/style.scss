@@ -10,13 +10,8 @@ li {
   list-style: none;
 }
 
-
-$red-color:#e50914;
+$red-color: #e50914;
 $border-gray: 8px solid #222222;
-@mixin center-size {
-  max-width: 1920px;
-  margin: 0 auto;
-}
 
 body {
   .container {
@@ -34,11 +29,18 @@ body {
         width: 100%;
         top: 0;
         left: 0;
-        background: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%),linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%),;
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.8) 0,
+            rgba(0, 0, 0, 0) 60%,
+            rgba(0, 0, 0, 0.8) 100%
+          ),
+          linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%);
         z-index: 0;
       }
       .header-container {
-        @include center-size();
+        max-width: 1920px;
+        margin: 0 auto;
         position: relative;
         height: 100%;
         z-index: 1;
@@ -69,7 +71,7 @@ body {
             outline: none;
             border: none;
             border-radius: 4px;
-            font-size: .8rem;
+            font-size: 0.8rem;
             cursor: pointer;
           }
         }
@@ -83,6 +85,8 @@ body {
           text-align: center;
           h1 {
             font-size: 3.2rem;
+            width: 600px;
+            margin: 0 auto;
           }
           h3 {
             font-weight: 500;
@@ -91,11 +95,11 @@ body {
           }
           h4 {
             font-weight: 500;
-            font-size: .9rem;
+            font-size: 0.9rem;
             padding-bottom: 20px;
           }
           .inputText {
-            width: 800px;
+            max-width: 800px;
             height: 68px;
             margin: 0 auto;
             position: relative;
@@ -104,8 +108,8 @@ body {
               top: 0;
               left: 0;
               height: 100%;
-              width: 65%;
-              border:none;
+              width: 100%;
+              border: none;
               outline: none;
               font-size: 1rem;
             }
@@ -115,7 +119,7 @@ body {
               right: 0;
               height: 100%;
               width: 35%;
-              border:none;
+              border: none;
               outline: none;
               background: $red-color;
               color: white;
@@ -125,7 +129,7 @@ body {
           }
           p {
             font-weight: 500;
-            font-size: .9rem;
+            font-size: 0.9rem;
             padding-top: 30px;
           }
         }
@@ -140,6 +144,7 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 0 40px;
     }
     @mixin h1-size {
       font-size: 2.5rem;
@@ -147,10 +152,8 @@ body {
     }
     @mixin p-size {
       font-size: 1.3rem;
-      letter-spacing: .2px;
+      letter-spacing: 0.2px;
     }
-
-
     .section1 {
       height: 470px;
       background-color: black;
@@ -159,6 +162,8 @@ body {
         @include section-devide();
         color: white;
         .left {
+          margin-right: 110px;
+          width: 475px;
           h1 {
             @include h1-size();
           }
@@ -167,8 +172,10 @@ body {
           }
         }
         .right {
+          max-width: 510px;
           img {
-            width: 510px;
+            width: 100%;
+            object-fit: cover;
           }
         }
       }
@@ -183,11 +190,14 @@ body {
         @include section-devide();
         color: white;
         .left {
+          margin-right: 110px;
+          max-width: 470px;
           img {
-            width: 470px;
+            width: 100%;
           }
         }
         .right {
+          width: 480px;
           h1 {
             @include h1-size();
           }
@@ -207,6 +217,7 @@ body {
         @include section-devide();
         color: white;
         .left {
+          width: 470px;
           h1 {
             @include h1-size();
           }
@@ -215,15 +226,16 @@ body {
           }
         }
         .right {
+          max-width: 510px;
           img {
-            width: 510px;
+            width: 100%;
           }
         }
       }
     }
     // end of section3---------------------------------------
     // question--------------------------------------------
-    @mixin question-top{
+    @mixin question-top {
       background-color: #303030;
       display: flex;
       align-items: center;
@@ -232,7 +244,7 @@ body {
       border-bottom: 1px solid black;
       font-size: 1.3rem;
     }
-    @mixin question-bottom{
+    @mixin question-bottom {
       background-color: #303030;
       padding: 40px 30px;
       font-size: 1.3rem;
@@ -258,18 +270,19 @@ body {
           margin: 40px 0;
           width: 840px;
           .question-box {
+            margin-bottom: 8px;
             .top {
               @include question-top();
               i.active {
                 transform: rotate(45deg);
-                transition: .3s ease transform ;
+                transition: 0.3s ease transform;
               }
             }
             .bottom {
               @include question-bottom();
               display: none;
               p {
-                margin-bottom:40px ;
+                margin-bottom: 40px;
                 &:last-child {
                   margin-bottom: 0;
                 }
@@ -283,7 +296,7 @@ body {
         .inputText {
           width: 800px;
           height: 68px;
-          margin: 20px auto 0;
+          margin: 20px auto;
           position: relative;
           .text {
             position: absolute;
@@ -291,7 +304,7 @@ body {
             left: 0;
             height: 100%;
             width: 65%;
-            border:none;
+            border: none;
             outline: none;
             font-size: 1rem;
           }
@@ -301,7 +314,7 @@ body {
             right: 0;
             height: 100%;
             width: 35%;
-            border:none;
+            border: none;
             outline: none;
             background: $red-color;
             color: white;
@@ -311,20 +324,70 @@ body {
         }
       }
     }
+    // end of question---------------------------------------
+    // footer--------------------------------------------
+    $footer-gray:rgb(97, 97, 97);
+    footer {
+      background-color: black;
+      color: $footer-gray;
+      .footer-container {
+        max-width:1080px;
+        margin: 0 auto;
+        padding: 60px 50px 0;
+        h5 {
+          font-size: .8rem;
+          a {
+            color: $footer-gray;
+          }
+        }
+        .footer-link-list {
+          display: flex;
+          align-items: top;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: 30px 0 20px;
+          max-width: 700px;
+          li {
+            display: flex;
+            flex-direction: column;
+            a {
+              color: $footer-gray;
+              font-size: .65rem;
+              margin-bottom: 17px;
+            }
+          }
+        }
+        select {
+          background-color: black;
+          color: rgb(163, 163, 163);
+          padding: 15px 20px;
+          font-size: .8rem;
+        }
+        .country {
+          display: block;
+          margin: 20px 0;
+          font-size: .65rem;
+        }
+        .location {
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 40px;
+          span {
+            font-size: .6rem;
+            a {
+              color: $footer-gray;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
-
-
-
-
 // media query-----------------------------------------------
 
-
 $breakepoint-smalldesktop: 1442px;
-$breakepoint-tablet: 768px;
-$breakepoint-phone: 414px;
-// tabelet ---------------------------------------------------
+// smalldesktop ---------------------------------------------------
 @media (max-width: $breakepoint-smalldesktop) {
   body {
     .container {
@@ -341,20 +404,402 @@ $breakepoint-phone: 414px;
           .contents {
             h1 {
               font-size: 2.5rem;
+              width: 450px;
             }
             h3 {
               margin: 0 auto;
               width: 55%;
             }
             .inputText {
-              width: 680px;
+              max-width: 680px;
               height: 60px;
               .text {
-                font-size: .8rem;
+                font-size: 0.8rem;
               }
               .submit {
                 font-size: 1.2rem;
               }
+            }
+          }
+        }
+      }
+      // end-of-header--------------------------------------------------
+      .question {
+        .question-container {
+          .question-list {
+            width: auto;
+          }
+          .question-box {
+            .top {
+              p {
+                margin-right: 50px;
+              }
+            }
+          }
+          .inputText {
+            max-width: 680px;
+            height: 60px;
+            .text {
+              font-size: 0.8rem;
+            }
+            .submit {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// end-of-smalldesktop--------------------------------------------------
+// tabelet ---------------------------------------------------
+$breakepoint-tablet: 949px;
+@media (max-width: $breakepoint-tablet) {
+  body {
+    .container {
+      header {
+        .header-container {
+          nav {
+            .logo {
+              img {
+                height: 80%;
+              }
+            }
+          }
+          .contents {
+            top: 25%;
+            h4 {
+              font-size: 1.1rem;
+              width: 380px;
+              margin: 0 auto;
+            }
+            .inputText {
+              max-width: 680px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .text {
+                position: initial;
+                display: inline-block;
+                width: 90%;
+                padding: 30px 0;
+              }
+              .submit {
+                position: initial;
+                margin-top: 15px;
+                width: 150px;
+                padding: 10px 0;
+                font-size: 0.8rem;
+              }
+            }
+            p {
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+      .section1 {
+        height: auto;
+        padding: 70px 0;
+        .section1-container {
+          flex-direction: column;
+          width: 100%;
+          .left {
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            h1 {
+              font-size: 2rem;
+            }
+            p {
+              font-size: 1rem;
+            }
+          }
+          .right {
+            max-width: 550px;
+            img {
+              margin-top: -4px;
+            }
+          }
+        }
+      }
+      .section2 {
+        height: auto;
+        padding: 70px 0;
+        .section2-container {
+          flex-direction: column-reverse;
+          width: 100%;
+          .left {
+            margin-right: 0;
+            margin-top: -25px;
+            max-width: 570px;
+          }
+          .right {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            h1 {
+              font-size: 2rem;
+            }
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+      .section3 {
+        height: auto;
+        padding: 70px 0;
+        .section3-container {
+          flex-direction: column;
+          width: 100%;
+          .left {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            h1 {
+              font-size: 2rem;
+            }
+            p {
+              font-size: 1rem;
+            }
+          }
+          .right {
+            max-width: 550px;
+            img {
+              margin-top: -4px;
+            }
+          }
+        }
+      }
+      .question {
+        .question-container {
+          h1 {
+            font-size: 2rem;
+            padding-bottom: 0px;
+          }
+          .question-list {
+            max-width: 900px;
+            width: 80%;
+            .question-box {
+              .top {
+                font-size: 1rem;
+              }
+            }
+          }
+          .ready {
+            max-width: 400px;
+            font-size: 1.2rem;
+            text-align: center;
+          }
+          .inputText {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .text {
+              width: 90%;
+              position: initial;
+              display: inline-block;
+              padding: 30px 0;
+            }
+            .submit {
+              position: initial;
+              margin-top: 15px;
+              width: 150px;
+              padding: 10px 0;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// end-of-tabelet--------------------------------------------------
+// phone ---------------------------------------------------
+$breakepoint-phone: 739px;
+@media (max-width: $breakepoint-phone) {
+  body {
+    .container {
+      header {
+        .header-container {
+          .contents {
+            h3 {
+              width: 90%;
+            }
+            h4 {
+              font-size: 0.9rem;
+            }
+            .inputText {
+              .text {
+                padding: 15px 0;
+                width: 80%;
+              }
+            }
+            p {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+      .section1 {
+        .section1-container {
+          .left {
+            width: 95%;
+          }
+        }
+      }
+      .section2 {
+        .section2-container {
+          .right {
+            width: 90%;
+          }
+        }
+      }
+      .section3 {
+        .section3-container {
+          .left {
+            h1 {
+              width: 70%;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+      .question {
+        .question-container {
+          .ready {
+            font-size: 0.9rem;
+            margin-top: -15px;
+          }
+          .inputText {
+            .text {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// end-of-phone--------------------------------------------------
+// small-phone ---------------------------------------------------
+$breakepoint-smallphone: 549px;
+@media (max-width: $breakepoint-smallphone) {
+  body {
+    .container {
+      header {
+        height: 550px;
+        .header-container {
+          nav {
+            height: 80px;
+            .logo {
+              img {
+                height: 80%;
+              }
+            }
+            button {
+              height: 30px;
+              width: 60px;
+              font-size: 0.7rem;
+            }
+          }
+          .contents {
+            h1 {
+              font-size: 1.5rem;
+            }
+            h3 {
+              font-size: 0.9rem;
+            }
+            p {
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+      .section1 {
+        padding: 40px 0;
+        .section1-container {
+          padding: 0 20px;
+          .left {
+            h1 {
+              font-size: 1.3rem;
+            }
+            p {
+              font-size: .9rem;
+            }
+          }
+          .right {
+            margin-top: 10px;
+          }
+        }
+      }
+      .section2 {
+        padding: 40px 0;
+        .section2-container {
+          padding: 0 20px;
+          .left {
+            
+          }
+          .right {
+                h1 {
+                  font-size: 1.3rem;
+                }
+                p {
+                  font-size: .9rem;
+                }
+          }
+        }
+      }
+      .section3 {
+        padding: 40px 0;
+        .section3-container {
+          padding: 0 20px;
+          .left {
+            h1 {
+              font-size: 1.3rem;
+              width: 100%;
+            }
+            p {
+              font-size: .9rem;
+              width: 90%;
+              margin: 0 auto;
+            }
+          }
+          .right {
+            margin-top: 10px;
+          }
+        }
+      }
+      .question {
+        padding: 40px 0;
+        .question-container {
+          h1 {
+            font-size: 1.3rem;
+          }
+          .question-list {
+            margin-top:20px;
+            width: 100%;
+            .question-box {
+              .top {
+                font-size: .9rem;
+                padding: 15px 20px;
+                letter-spacing: -.6px;
+              }
+              .bottom {
+                padding: 15px 20px;
+                p {
+                  font-size: .9rem;
+                  letter-spacing: -.6px;
+                }
+              }
+            }
+          }
+          .inputText {
+            .text {
+              width: 90%;
+              padding: 15px 0;
             }
           }
         }
