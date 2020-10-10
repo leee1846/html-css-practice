@@ -344,6 +344,13 @@ body .container .question .question-container .question-list .question-box .top 
   font-size: 1.3rem;
 }
 
+body .container .question .question-container .question-list .question-box .top i {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.3s ease transform;
+  transition: 0.3s ease transform;
+}
+
 body .container .question .question-container .question-list .question-box .top i.active {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -414,7 +421,7 @@ body .container footer .footer-container {
 }
 
 body .container footer .footer-container h5 {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 body .container footer .footer-container h5 a {
@@ -449,7 +456,7 @@ body .container footer .footer-container .footer-link-list li {
 
 body .container footer .footer-container .footer-link-list li a {
   color: #616161;
-  font-size: .65rem;
+  font-size: 0.65rem;
   margin-bottom: 17px;
 }
 
@@ -457,13 +464,13 @@ body .container footer .footer-container select {
   background-color: black;
   color: #a3a3a3;
   padding: 15px 20px;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 body .container footer .footer-container .country {
   display: block;
   margin: 20px 0;
-  font-size: .65rem;
+  font-size: 0.65rem;
 }
 
 body .container footer .footer-container .location {
@@ -478,7 +485,7 @@ body .container footer .footer-container .location {
 }
 
 body .container footer .footer-container .location span {
-  font-size: .6rem;
+  font-size: 0.6rem;
 }
 
 body .container footer .footer-container .location span a {
@@ -511,7 +518,7 @@ body .container footer .footer-container .location span a {
     font-size: 1.2rem;
   }
   body .container .question .question-container .question-list {
-    width: auto;
+    width: 800px;
   }
   body .container .question .question-container .question-box .top p {
     margin-right: 50px;
@@ -763,7 +770,7 @@ body .container footer .footer-container .location span a {
     font-size: 1.3rem;
   }
   body .container .section1 .section1-container .left p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   body .container .section1 .section1-container .right {
     margin-top: 10px;
@@ -778,7 +785,7 @@ body .container footer .footer-container .location span a {
     font-size: 1.3rem;
   }
   body .container .section2 .section2-container .right p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   body .container .section3 {
     padding: 40px 0;
@@ -791,7 +798,7 @@ body .container footer .footer-container .location span a {
     width: 100%;
   }
   body .container .section3 .section3-container .left p {
-    font-size: .9rem;
+    font-size: 0.9rem;
     width: 90%;
     margin: 0 auto;
   }
@@ -809,16 +816,16 @@ body .container footer .footer-container .location span a {
     width: 100%;
   }
   body .container .question .question-container .question-list .question-box .top {
-    font-size: .9rem;
+    font-size: 0.9rem;
     padding: 15px 20px;
-    letter-spacing: -.6px;
+    letter-spacing: -0.6px;
   }
   body .container .question .question-container .question-list .question-box .bottom {
     padding: 15px 20px;
   }
   body .container .question .question-container .question-list .question-box .bottom p {
-    font-size: .9rem;
-    letter-spacing: -.6px;
+    font-size: 0.9rem;
+    letter-spacing: -0.6px;
   }
   body .container .question .question-container .inputText .text {
     width: 90%;

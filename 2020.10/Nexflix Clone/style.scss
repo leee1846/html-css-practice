@@ -273,9 +273,13 @@ body {
             margin-bottom: 8px;
             .top {
               @include question-top();
-              i.active {
-                transform: rotate(45deg);
+              i {
+                transform: rotate(0deg);
                 transition: 0.3s ease transform;
+                &.active {
+                  transform: rotate(45deg);
+                  transition: 0.3s ease transform;
+                }
               }
             }
             .bottom {
@@ -326,16 +330,16 @@ body {
     }
     // end of question---------------------------------------
     // footer--------------------------------------------
-    $footer-gray:rgb(97, 97, 97);
+    $footer-gray: rgb(97, 97, 97);
     footer {
       background-color: black;
       color: $footer-gray;
       .footer-container {
-        max-width:1080px;
+        max-width: 1080px;
         margin: 0 auto;
         padding: 60px 50px 0;
         h5 {
-          font-size: .8rem;
+          font-size: 0.8rem;
           a {
             color: $footer-gray;
           }
@@ -352,7 +356,7 @@ body {
             flex-direction: column;
             a {
               color: $footer-gray;
-              font-size: .65rem;
+              font-size: 0.65rem;
               margin-bottom: 17px;
             }
           }
@@ -361,19 +365,19 @@ body {
           background-color: black;
           color: rgb(163, 163, 163);
           padding: 15px 20px;
-          font-size: .8rem;
+          font-size: 0.8rem;
         }
         .country {
           display: block;
           margin: 20px 0;
-          font-size: .65rem;
+          font-size: 0.65rem;
         }
         .location {
           display: flex;
           flex-direction: column;
           padding-bottom: 40px;
           span {
-            font-size: .6rem;
+            font-size: 0.6rem;
             a {
               color: $footer-gray;
             }
@@ -427,7 +431,7 @@ $breakepoint-smalldesktop: 1442px;
       .question {
         .question-container {
           .question-list {
-            width: auto;
+            width: 800px;
           }
           .question-box {
             .top {
@@ -727,7 +731,7 @@ $breakepoint-smallphone: 549px;
               font-size: 1.3rem;
             }
             p {
-              font-size: .9rem;
+              font-size: 0.9rem;
             }
           }
           .right {
@@ -740,15 +744,14 @@ $breakepoint-smallphone: 549px;
         .section2-container {
           padding: 0 20px;
           .left {
-            
           }
           .right {
-                h1 {
-                  font-size: 1.3rem;
-                }
-                p {
-                  font-size: .9rem;
-                }
+            h1 {
+              font-size: 1.3rem;
+            }
+            p {
+              font-size: 0.9rem;
+            }
           }
         }
       }
@@ -762,7 +765,7 @@ $breakepoint-smallphone: 549px;
               width: 100%;
             }
             p {
-              font-size: .9rem;
+              font-size: 0.9rem;
               width: 90%;
               margin: 0 auto;
             }
@@ -779,19 +782,19 @@ $breakepoint-smallphone: 549px;
             font-size: 1.3rem;
           }
           .question-list {
-            margin-top:20px;
+            margin-top: 20px;
             width: 100%;
             .question-box {
               .top {
-                font-size: .9rem;
+                font-size: 0.9rem;
                 padding: 15px 20px;
-                letter-spacing: -.6px;
+                letter-spacing: -0.6px;
               }
               .bottom {
                 padding: 15px 20px;
                 p {
-                  font-size: .9rem;
-                  letter-spacing: -.6px;
+                  font-size: 0.9rem;
+                  letter-spacing: -0.6px;
                 }
               }
             }
