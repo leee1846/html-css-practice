@@ -1,0 +1,3 @@
+# html-css-practice-2020
+html,css를 이용한 간단한 토이 프로젝트 모음 
+꾸준히 업데이트중...
