@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.header-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./image/bg_main01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+nav {
+  width: 100%;
+  padding: 0 50px;
+  height: 100px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all .1s ease;
+  transition-delay: .1s;
+}
+/* ------------toggle */
+nav.toggle {
+  background-color: white;
+}
+nav.toggle a,
+nav.toggle span,
+nav.toggle i {
+  color: black;
+}
+nav.toggle .left .line,
+nav.toggle .left .line:before,
+nav.toggle .left .line:after {
+  background-color: black;
+}
+nav.toggle .right a {
+  color: black;
+}
+nav.toggle .right .nav-select a {
+  border: 1px solid black;
+}
+/* -----------------toggle */
+nav .left {
+  display: flex;
+  align-items: center;
+}
+nav .left .box {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+nav .left .line {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin-right: 25px;
+  cursor: pointer;
+  transition: all .1s ease;
+  transition-delay: .1s;
+}
+nav .left .line:before,
+nav .left .line:after {
+  content: "";
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  transition: all .1s ease;
+  transition-delay: .1s;
+}
+nav .left .line:before {
+  top: -8px;
+  width: 23px;
+}
+nav .left .line:after {
+  top: 8px;
+  width: 15px;
+}
+nav .left .look {
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+nav .left .look span {
+  font-size: 0.7rem;
+  padding-right: 2px;
+  transition: all .1s ease;
+  transition-delay: .1s;
+}
+nav .left .look i {
+  font-size: 0.6rem;
+  margin-right: 25px;
+  transition: all .1s ease;
+  transition-delay: .1s;
+}
+nav .left a {
+  color: white;
+  font-size: 0.7rem;
+  transition: all .1s ease;
+  transition-delay: .1s;
+}
+nav .left a.toggle span:nth-child(3) {
+  display: inline-block;
+}
+nav .left a span {
+  padding-right: 5px;
+  transition: all .1s ease;
+  transition-delay: .1s;
+}
+nav .left a span:nth-child(3) {
+  display: none;
+}
+nav .left a i {
+  padding-right: 5px;
+  transition: all .1s ease;
+  transition-delay: .1s;
+}
+nav .center {
+  color: white;
+  text-align: center;
+}
+nav .center span {
+  display: block;
+  line-height: 26px;
+  font-size: 1.2rem;
+  transition: all .1s ease;
+  transition-delay: .1s;
+}
+nav .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .right a {
+  color: white;
+  font-size: 0.7rem;
+  margin-left: 20px;
+  transition: all .1s ease;
+  transition-delay: .1s;
+}
+nav .right .nav-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transform: translateY(37%);
+  transition: all .1s ease;
+  transition-delay: .1s;
+}
+nav .right .nav-select a {
+  font-weight: 700;
+  font-size: 0.8rem;
+  border: 1px solid white;
+  padding: 10px 17px;
+  transition: color .1s ease;
+  transition-delay: .1s;
+  z-index: 10;
+}
+nav .right .nav-select .reservation {
+  background-color: white;
+  color: black;
+  font-weight: 100;
+  font-size: .7rem;
+  opacity: 0;
+  cursor: inherit;
+}
+/* ------toggle */
+nav .right .nav-select.toggle .reservation {
+  cursor: pointer;
+  opacity: 1;
+}
+/* ------toggle */
+nav .right .nav-select .reservation:hover {
+  background-color: rgb(243, 243, 243);
+}
+/*----------------------------------------------------- nav */
+.look-up {
+  position: absolute;
+  top: -2000px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  background-color: rgb(17, 17, 17);
+  transition: all 0.5s ease;
+}
+.look-up .i-box {
+  max-width: 1902px;
+  margin: 0 auto;
+  height: 100px;
+  position: relative;
+}
+.look-up .i-box i {
+  position: absolute;
+  right: 0;
+  font-size: 2rem;
+  color: white;
+}
+/* ------------toggle */
+.look-up.toggle {
+  top: 100px;
+}
+/* ------------toggle */
+.look-up .lookup-container {
+  max-width: 1902px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.look-up .lookup-container .lookup-title {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
+.look-up .lookup-container .lookup-title span {
+  color: rgb(115, 119, 78);
+  font-size: 0.8rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.look-up .lookup-container .lookup-title a {
+  color: gray;
+  font-size: 0.7rem;
+  margin-bottom: 15px;
+}
+.look-up .lookup-container .lookup-title .sub {
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: block;
+  line-height: 1;
+  margin: 15px 0;
+}
