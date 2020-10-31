@@ -19,8 +19,6 @@ li {
 }
 header {
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
 nav {
   width: 100%;
@@ -191,6 +189,7 @@ nav .right .nav-select .reservation:hover {
   background-color: rgb(243, 243, 243);
 }
 /*----------------------------------------------------- nav */
+/*----------------------------- nav look-up list */
 .look-up {
   position: absolute;
   top: -2000px;
@@ -248,4 +247,57 @@ nav .right .nav-select .reservation:hover {
   display: block;
   line-height: 1;
   margin: 15px 0;
+}
+/*----------------------------- nav look-up list */
+/* --------------------------header contents */
+.reservation .title{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reservation .title h2 {
+  font-size: 4rem;
+  color: white;
+}
+.reservation-container {
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.reservation-container-flex {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+/* 공통 */
+.small-title{
+  color: rgb(206, 206, 206);
+  font-size: .8rem;
+}
+.white-contents {
+  color: white;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.reservation-container-flex .nana {
+  display: none;
+}
+/* 공통 */
+.reservation-container-flex .facility{
+  display: flex;
+  flex-direction: column;
+}
+/* 클릭 핸들러 해야함 */
+.reservation-container-flex .facility .room-click {
+  display: none;
+  
+}
+/* 클릭 핸들러 해야함 */
+.facility .click-zone i {
+  color: white;
 }
