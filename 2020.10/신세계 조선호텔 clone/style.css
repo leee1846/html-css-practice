@@ -28,8 +28,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all .1s ease;
-  transition-delay: .1s;
+  transition: all 0.1s ease;
+  transition-delay: 0.1s;
 }
 /* ------------toggle */
 nav.toggle {
@@ -68,11 +68,11 @@ nav .left .line {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   margin-right: 25px;
   cursor: pointer;
-  transition: all .1s ease;
-  transition-delay: .1s;
+  transition: all 0.1s ease;
+  transition-delay: 0.1s;
 }
 nav .left .line:before,
 nav .left .line:after {
@@ -80,8 +80,8 @@ nav .left .line:after {
   height: 2px;
   background-color: white;
   position: absolute;
-  transition: all .1s ease;
-  transition-delay: .1s;
+  transition: all 0.1s ease;
+  transition-delay: 0.1s;
 }
 nav .left .line:before {
   top: -8px;
@@ -100,36 +100,36 @@ nav .left .look {
 nav .left .look span {
   font-size: 0.7rem;
   padding-right: 2px;
-  transition: all .1s ease;
-  transition-delay: .1s;
+  transition: all 0.1s ease;
+  transition-delay: 0.1s;
 }
 nav .left .look i {
   font-size: 0.6rem;
   margin-right: 25px;
-  transition: all .1s ease;
-  transition-delay: .1s;
+  transition: all 0.1s ease;
+  transition-delay: 0.1s;
 }
 nav .left a {
   color: white;
   font-size: 0.7rem;
-  transition: all .1s ease;
-  transition-delay: .1s;
+  transition: all 0.1s ease;
+  transition-delay: 0.1s;
 }
 nav .left a.toggle span:nth-child(3) {
   display: inline-block;
 }
 nav .left a span {
   padding-right: 5px;
-  transition: all .1s ease;
-  transition-delay: .1s;
+  transition: all 0.1s ease;
+  transition-delay: 0.1s;
 }
 nav .left a span:nth-child(3) {
   display: none;
 }
 nav .left a i {
   padding-right: 5px;
-  transition: all .1s ease;
-  transition-delay: .1s;
+  transition: all 0.1s ease;
+  transition-delay: 0.1s;
 }
 nav .center {
   color: white;
@@ -139,8 +139,8 @@ nav .center span {
   display: block;
   line-height: 26px;
   font-size: 1.2rem;
-  transition: all .1s ease;
-  transition-delay: .1s;
+  transition: all 0.1s ease;
+  transition-delay: 0.1s;
 }
 nav .right {
   display: flex;
@@ -151,31 +151,31 @@ nav .right a {
   color: white;
   font-size: 0.7rem;
   margin-left: 20px;
-  transition: all .1s ease;
-  transition-delay: .1s;
+  transition: all 0.1s ease;
+  transition-delay: 0.1s;
 }
 nav .right .nav-select {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   transform: translateY(37%);
-  transition: all .1s ease;
-  transition-delay: .1s;
+  transition: all 0.1s ease;
+  transition-delay: 0.1s;
 }
 nav .right .nav-select a {
   font-weight: 700;
   font-size: 0.8rem;
   border: 1px solid white;
   padding: 10px 17px;
-  transition: color .1s ease;
-  transition-delay: .1s;
+  transition: color 0.1s ease;
+  transition-delay: 0.1s;
   z-index: 10;
 }
 nav .right .nav-select .reservation {
   background-color: white;
   color: black;
   font-weight: 100;
-  font-size: .7rem;
+  font-size: 0.7rem;
   opacity: 0;
   cursor: inherit;
 }
@@ -250,7 +250,7 @@ nav .right .nav-select .reservation:hover {
 }
 /*----------------------------- nav look-up list */
 /* --------------------------header contents */
-.reservation .title{
+.reservation .title {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -274,30 +274,134 @@ nav .right .nav-select .reservation:hover {
   margin: 0 auto;
   justify-content: space-between;
 }
+
 /* 공통 */
-.small-title{
-  color: rgb(206, 206, 206);
-  font-size: .8rem;
+.small-title {
+  color: rgb(182, 182, 182);
+  font-size: 0.7rem;
+  font-weight: bold;
 }
 .white-contents {
   color: white;
   font-weight: 900;
-  font-size: 1.2rem;
-}
-.reservation-container-flex .nana {
-  display: none;
+  font-size: 1.1rem;
 }
 /* 공통 */
-.reservation-container-flex .facility{
+
+.reservation-container-flex .facility {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-10px);
+}
+.facility > a {
+  width: 200px;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.facility .room-click {
+  position: absolute;
+  transform: translateY(0px);
+  background-color: white;
+  width: 200px;
+  opacity: 0;
+}
+.facility .click-zone i {
+  color: white;
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+}
+
+/* 클릭했을시 css */
+.facility.toggle > a {
+  background-color: white;
+  width: 200px;
+  height: 60px;
+  padding: 0 20px;
+  
+}
+.facility.toggle .room-click {
+  opacity: 1;
+}
+.facility.toggle .room-click a {
+  position: absolute;
+  width: 200px;
+  background-color: white;
+  color: gray;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+  transform: translateY(0px);
+}
+.facility.toggle .room-click a:nth-child(1){
+  animation: toggle1 .1s linear forwards;
+  z-index: 5;
+}
+.facility.toggle .room-click a:nth-child(2){
+  animation: toggle2 .1s linear forwards;
+  z-index: 4;
+}
+.facility.toggle .room-click a:nth-child(3){
+  animation: toggle3 .1s linear forwards;
+  z-index: 3;
+}
+@keyframes toggle1 {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-60px);
+  }
+}
+@keyframes toggle2 {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-120px);
+  }
+}
+@keyframes toggle3 {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-180px);
+  }
+}
+
+.facility.toggle .room-click a:hover {
+  background-color: rgb(247, 247, 247);
+}
+.facility.toggle .small-title {
+  display: none;
+}
+.facility.toggle .click-zone > .white-contents {
+  position: absolute;
+  color: black;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.facility.toggle .click-zone i {
+  color: black;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* 클릭했을시 css */
+
+.hotel,
+.check-out {
   display: flex;
   flex-direction: column;
 }
-/* 클릭 핸들러 해야함 */
-.reservation-container-flex .facility .room-click {
-  display: none;
-  
+.total {
+  display: flex;
 }
-/* 클릭 핸들러 해야함 */
-.facility .click-zone i {
-  color: white;
+.total > .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
