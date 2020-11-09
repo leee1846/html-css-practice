@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: dodgerblue;
+}
+
+body .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 97%;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 70px 30px;
+}
+
+body .container .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .left .picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .container .left .picture .circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  margin: 0 5px;
+}
+
+body .container .left .picture .circle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #77cdff;
+}
+
+body .container .left .title {
+  background-color: rgba(255, 255, 255, 0.301);
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+  font-weight: 900;
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+body .container .center .picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .container .center .picture .circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  margin: 0 5px;
+}
+
+body .container .center .picture .circle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #77cdff;
+}
+
+body .container .center .title {
+  background-color: rgba(255, 255, 255, 0.301);
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+  font-weight: 900;
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+body .container .right .picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .container .right .picture .circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  margin: 0 5px;
+}
+
+body .container .right .picture .circle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #77cdff;
+}
+
+body .container .right .title {
+  background-color: rgba(255, 255, 255, 0.301);
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+  font-weight: 900;
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+/*# sourceMappingURL=desktop.css.map */

@@ -1,0 +1,24 @@
+@media (max-width: 767px) {
+  body .container .left .picture .circle {
+    width: 90px;
+    height: 90px;
+  }
+  body .container .left .picture .circle i {
+    font-size: 2rem;
+  }
+  body .container .center .picture .circle {
+    width: 90px;
+    height: 90px;
+  }
+  body .container .center .picture .circle i {
+    font-size: 2rem;
+  }
+  body .container .right .picture .circle {
+    width: 90px;
+    height: 90px;
+  }
+  body .container .right .picture .circle i {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=phone.css.map */

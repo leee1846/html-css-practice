@@ -1,0 +1,39 @@
+@media (max-width: 767px) {
+  body {
+    .container {
+      .left {
+        .picture {
+          .circle {
+            width: 90px;
+            height: 90px;
+            i {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+      .center {
+        .picture {
+          .circle {
+            width: 90px;
+            height: 90px;
+            i {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+      .right {
+        .picture {
+          .circle {
+            width: 90px;
+            height: 90px;
+            i {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

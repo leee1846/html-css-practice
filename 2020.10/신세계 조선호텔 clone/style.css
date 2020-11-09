@@ -263,10 +263,8 @@ nav .right .nav-select .reservation:hover {
 }
 .reservation-container {
   width: 100%;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  transform: translateY(-850%);
 }
 .reservation-container-flex {
   display: flex;
@@ -319,7 +317,6 @@ nav .right .nav-select .reservation:hover {
   width: 200px;
   height: 60px;
   padding: 0 20px;
-  
 }
 .facility.toggle .room-click {
   opacity: 1;
@@ -334,16 +331,16 @@ nav .right .nav-select .reservation:hover {
   padding: 0 20px;
   transform: translateY(0px);
 }
-.facility.toggle .room-click a:nth-child(1){
-  animation: toggle1 .1s linear forwards;
+.facility.toggle .room-click a:nth-child(1) {
+  animation: toggle1 0.1s linear forwards;
   z-index: 5;
 }
-.facility.toggle .room-click a:nth-child(2){
-  animation: toggle2 .1s linear forwards;
+.facility.toggle .room-click a:nth-child(2) {
+  animation: toggle2 0.1s linear forwards;
   z-index: 4;
 }
-.facility.toggle .room-click a:nth-child(3){
-  animation: toggle3 .1s linear forwards;
+.facility.toggle .room-click a:nth-child(3) {
+  animation: toggle3 0.1s linear forwards;
   z-index: 3;
 }
 @keyframes toggle1 {
