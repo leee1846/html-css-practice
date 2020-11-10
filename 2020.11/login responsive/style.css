@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+body .container .imgbx {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: url("./pic.jpg") no-repeat center/cover;
+}
+
+body .container .imgbx:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(225deg, #e91e63, #03a9f4);
+  mix-blend-mode: screen;
+}
+
+body .container .loginbx {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .loginbx .login-flex .title h2 {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #4b5977;
+  border-bottom: 4px solid #f5657d;
+  margin-bottom: 15px;
+}
+
+body .container .loginbx .login-flex .name label {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: #a7afc0;
+  margin-bottom: 7px;
+}
+
+body .container .loginbx .login-flex .name input {
+  width: 100%;
+  border: 1px solid #a7afc0;
+  letter-spacing: 0.1rem;
+  padding: 10px 15px;
+  border-radius: 30px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+body .container .loginbx .login-flex .pw label {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: #a7afc0;
+  margin-bottom: 7px;
+}
+
+body .container .loginbx .login-flex .pw input {
+  width: 100%;
+  border: 1px solid #a7afc0;
+  letter-spacing: 0.1rem;
+  padding: 10px 15px;
+  border-radius: 30px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+body .container .loginbx .login-flex .checkbx {
+  margin-bottom: 10px;
+}
+
+body .container .loginbx .login-flex .checkbx label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #a7afc0;
+}
+
+body .container .loginbx .login-flex input[type="submit"] {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  background-color: #f5657d;
+  color: white;
+  letter-spacing: 0.08rem;
+}
+
+body .container .loginbx .login-flex .sign-up {
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: #a7afc0;
+  margin-bottom: 70px;
+}
+
+body .container .loginbx .login-flex .sign-up span a {
+  color: #f5657d;
+}
+
+body .container .loginbx .login-flex .snsbx {
+  text-align: center;
+}
+
+body .container .loginbx .login-flex .snsbx h3 {
+  font-size: 0.9rem;
+  color: #a7afc0;
+  margin-bottom: 10px;
+}
+
+body .container .loginbx .login-flex .snsbx ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .loginbx .login-flex .snsbx ul li {
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #a7afc0;
+  margin: 0 5px;
+  text-align: center;
+  line-height: 40px;
+}
+
+body .container .loginbx .login-flex .snsbx ul li:hover {
+  background-color: #f5657d;
+}
+
+body .container .loginbx .login-flex .snsbx ul li:hover i {
+  color: white;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+body .container .loginbx .login-flex .snsbx ul li i {
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=style.css.map */
